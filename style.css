@@ -1,29 +1,253 @@
+/* ===========================
+   Smart Attendance System
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Prompt",sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background:#f5f5f5;
+
+    background:#f2f5f7;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:25px;
+
 }
 
 .container{
-    width:400px;
-    margin:50px auto;
+
+    width:100%;
+
+    max-width:420px;
+
     background:white;
-    padding:30px;
-    border-radius:10px;
-    text-align:center;
+
+    border-radius:25px;
+
+    padding:35px 25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
 }
 
 h1{
-    margin-bottom:10px;
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+    color:#333;
+
 }
 
-p{
+.subtitle{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+.menu{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:18px;
+
+    color:white;
+
+    padding:24px;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-bottom:22px;
+
+    transition:.25s;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+
+}
+
+.menu:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.green{
+
+    background:#43A047;
+
+}
+
+.blue{
+
+    background:#008ecc;
+
+}
+
+.orange{
+
+    background:#F57C00;
+    color:#8c8c8c;
+
+}
+
+.footer{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#9a9a9a;
+
+    font-size:18px;
+
+}
+
+input,select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #ccc;
+
+    margin-top:8px;
+
     margin-bottom:20px;
+
+    font-size:18px;
+
+}
+
+label{
+
+    font-weight:bold;
+
+    color:#333;
+
+    display:block;
+
 }
 
 button{
+
     width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    font-size:18px;
+
+}
+
+.primary-btn{
+
+    background:#43A047;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
     cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+.secondary-btn{
+
+    margin-top:15px;
+
+    background:#ececec;
+
+    color:#333;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+.card{
+
+    background:#43A047;
+
+    color:white;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.card h2{
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.card p{
+
+    font-size:20px;
+
+    line-height:1.5;
+
+}
+
+.gps{
+
+    background:#f5f5f5;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    margin-bottom:25px;
+
 }

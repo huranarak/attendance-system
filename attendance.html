@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>เช็คชื่อเข้าเรียน</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🟢 เช็คชื่อเข้าเรียน</h1>
+
+<p>กรอกข้อมูลให้ครบถ้วน</p>
+
+<label>สถานะการเข้าเรียน</label>
+
+<select id="status">
+
+<option value="">-- เลือกสถานะ --</option>
+
+<option>ตรงเวลา</option>
+
+<option>สาย</option>
+
+<option>ขาด</option>
+
+</select>
+
+<br><br>
+
+<label>ชื่อ - นามสกุล</label>
+
+<input
+type="text"
+id="fullname"
+placeholder="กรอกชื่อ - นามสกุล">
+
+<br><br>
+
+<label>รหัสนักศึกษา</label>
+
+<input
+type="text"
+id="studentID"
+maxlength="11"
+placeholder="000000000-0">
+
+<br><br>
+
+<label>สาขา</label>
+
+<select id="major">
+
+<option value="">เลือกสาขา</option>
+
+<option>GPA</option>
+
+<option>กFFM</option>
+
+<option>UMT</option>
+
+</select>
+
+<br><br>
+
+<label>📍 GPS</label>
+
+<p id="gpsStatus">
+
+กำลังตรวจสอบ...
+
+</p>
+
+<br>
+
+<button onclick="saveAttendance()">
+
+บันทึกการเช็คชื่อ
+
+</button>
+
+<br><br>
+
+<button onclick="location.href='index.html'">
+
+⬅ กลับหน้าหลัก
+
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
